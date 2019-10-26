@@ -1,0 +1,39 @@
+#container{
+    width:700px;
+    height: 600px;
+    overflow: hidden;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+#photo{
+    width: 3500px;
+    animation:switch 5s ease-out infinite;
+}
+#photo > img{
+    float:left;
+    width:700px;
+    height:600px;
+
+}
+@keyframes switch{
+    0%, 15%{
+        margin-left: 0;
+    }
+    20%, 35%{
+        margin-left: -700px;
+    }
+    40%, 55%{
+        margin-left: -1400px;
+    }
+    60%, 75%{
+        margin-left:-2100px;
+    }
+    80%, 95%{
+        margin-left:-2800px;
+    }
+    100%{
+        margin-left: -3500px;
+    }
+}
